@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--ink:#17251e;--green:#254d3b;--mint:#dce9d8;--cream:#f5f4ed;--orange:#e5a45e}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream)}a{color:inherit;text-decoration:none}.site-header{height:82px;padding:0 6.5%;display:flex;align-items:center;justify-content:space-between;background:var(--cream);position:sticky;top:0;z-index:10;border-bottom:1px solid #dfe4d9}.brand{display:flex;align-items:center;gap:10px}.brand-mark{width:39px;height:39px;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font-family:'Playfair Display';font-size:19px}.brand strong{display:block;font-size:17px;letter-spacing:2px}.brand small{display:block;font-size:8px;letter-spacing:1.2px;margin-top:3px;color:#738077}.site-header nav{display:flex;gap:35px;font-size:12px;color:#526158}.site-header nav a:hover,.text-link:hover{color:#b77739}.header-cta{font-size:12px;font-weight:700;border-bottom:1px solid var(--green);padding:9px 0}.header-cta span{margin-left:12px}.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--green)}
+.hero{min-height:610px;background:var(--mint);position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;padding:85px 6.5% 65px}.hero-content{z-index:2;max-width:560px}.eyebrow,.section-kicker{font-size:10px;font-weight:700;letter-spacing:2px;color:#61776a}.eyebrow{display:flex;align-items:center;gap:10px}.eyebrow span{width:7px;height:7px;background:#c88b4d;border-radius:50%}h1,h2{font-family:'Playfair Display',serif;font-weight:500;letter-spacing:-1.8px}h1{font-size:clamp(52px,6vw,82px);line-height:1.04;margin:29px 0 22px}h1 em,h2 em{color:#688a70;font-weight:500}.hero-copy{font-size:14px;line-height:1.9;color:#56665c;max-width:440px}.hero-actions{display:flex;align-items:center;gap:28px;margin-top:32px}.button{padding:15px 21px;font-size:11px;font-weight:700;letter-spacing:.3px}.button-light{background:var(--green);color:white}.button span{margin-left:20px}.text-link{font-size:11px;font-weight:700;border-bottom:1px solid #91a293;padding:0 0 7px}.text-link span{margin-left:9px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:60px;color:#7b897e;font-size:10px}.note-line{height:1px;width:35px;background:#9baa9d}.hero-art{position:relative;min-height:420px;margin:0 -20px 0 0;overflow:hidden}.sun{position:absolute;width:110px;height:110px;border-radius:50%;background:#e7bd82;right:16%;top:2%}.cloud{position:absolute;background:#f8f8ee;border-radius:30px;width:75px;height:17px;opacity:.75}.cloud:before,.cloud:after{content:'';position:absolute;background:inherit;border-radius:50%}.cloud:before{width:27px;height:27px;left:13px;top:-13px}.cloud:after{width:22px;height:22px;right:12px;top:-9px}.cloud-one{top:18%;left:12%}.cloud-two{top:27%;right:4%;transform:scale(.7)}.hill{position:absolute;border-radius:50% 50% 0 0}.hill-back{background:#a8c3a4;width:120%;height:190px;bottom:25px;left:-12%}.hill-front{background:#6e9876;width:120%;height:130px;bottom:-12px;left:-8%}.school-building{position:absolute;z-index:2;width:230px;height:170px;bottom:100px;left:50%;transform:translateX(-50%)}.roof{height:36px;background:#c27d52;clip-path:polygon(50% 0,100% 100%,0 100%)}.building-face{height:135px;background:#f1e6ce;border:4px solid #d4c5a8;position:relative;text-align:center}.building-sign{font-family:'Playfair Display';font-size:17px;color:var(--green);padding-top:10px}.windows{display:flex;justify-content:space-evenly;margin-top:12px}.windows i{width:25px;height:30px;background:#a8c9c5;border:3px solid #fff}.door{position:absolute;bottom:0;left:calc(50% - 18px);width:36px;height:49px;background:#64836e;border:3px solid #fff;border-bottom:0}.tree{position:absolute;z-index:3;bottom:70px;width:25px;height:80px;background:#84684b}.tree:before{content:'';position:absolute;width:76px;height:80px;background:#467958;border-radius:50%;left:-25px;top:-52px}.tree b{position:absolute;width:60px;height:55px;background:#5b8b65;border-radius:50%;top:-30px;left:-17px}.tree-a{left:13%}.tree-b{right:10%;transform:scale(1.15)}.flower{position:absolute;z-index:4;color:#f7d78a;font-size:25px;bottom:30px}.flower-a{left:28%}.flower-b{right:28%}.art-label{position:absolute;right:0;bottom:10px;font-size:9px;letter-spacing:1.5px;color:#f5f4ed;z-index:4}.art-label span{color:#f2d38f;margin-right:7px}.hero-bottom{position:absolute;bottom:18px;left:6.5%;right:6.5%;display:flex;justify-content:space-between;font-size:8px;letter-spacing:1.5px;color:#718277}
+.stats-strip{background:#fff;display:grid;grid-template-columns:repeat(4,1fr);padding:28px 9%;gap:20px;align-items:center}.stats-strip>div:not(.stats-message){border-right:1px solid #e7e9e2}.stats-strip strong{font-family:'Playfair Display';font-size:34px;font-weight:500;display:block;color:var(--green)}.stats-strip strong span{color:#c78b4d}.stats-strip small{font-size:9px;letter-spacing:1.6px;color:#89958b}.stats-message{font-family:'Playfair Display';font-style:italic;font-size:17px;line-height:1.4;color:#6b7c70}
+.section{padding:105px 9%}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8%;margin-top:35px}.section h2{font-size:clamp(48px,5vw,67px);line-height:1.05}.about-text{padding-top:5px}.lead{font-family:'Playfair Display';font-size:21px;line-height:1.55;color:#354d3d}.about-text>p:not(.lead),.life-copy>p:not(.lead){font-size:13px;line-height:1.9;color:#78847b;margin-top:17px}.under-link{display:inline-block;margin-top:25px;font-size:11px;font-weight:700;border-bottom:1px solid #8c9c8e;padding-bottom:8px}.under-link span{margin-left:15px}.value-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:65px}.value-card{padding:25px 25px 28px;background:#fff;border:1px solid #eaede6}.value-icon{font-size:23px;color:#b77c45}.value-card h3{font-family:'Playfair Display';font-size:22px;font-weight:500;margin:17px 0 8px}.value-card p{font-size:11px;line-height:1.8;color:#7b887e}
+.campus-section{background:var(--green);color:white}.campus-inner{padding-top:100px;padding-bottom:110px}.light-kicker{color:#b6c9b8}.campus-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin:32px 0 42px}.campus-heading h2{font-size:clamp(45px,5vw,62px)}.campus-heading h2 em{color:#b5c9a9}.campus-heading p{max-width:310px;font-size:12px;line-height:1.9;color:#c1d0c4;padding-bottom:6px}.campus-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.campus-card{background:#f4f1e7;color:var(--ink)}.garden-illustration,.zoo-illustration{height:240px;position:relative;overflow:hidden;background:#d9e7d4}.garden-sun,.zoo-sun{position:absolute;right:15%;top:15%;width:55px;height:55px;background:#eac58a;border-radius:50%}.garden-illustration:before{content:'';position:absolute;bottom:-65px;left:-10%;width:120%;height:170px;background:#83a77d;border-radius:50%}.garden-path{position:absolute;z-index:1;bottom:-20px;left:42%;width:95px;height:145px;background:#e7d7b6;transform:rotate(12deg);border-radius:50%}.bush{position:absolute;z-index:2;bottom:45px;background:#477b5a;border-radius:50%;width:105px;height:90px}.bush1{left:12%}.bush2{right:12%;transform:scale(.8)}.plant{position:absolute;z-index:3;color:#f5d18c;font-size:30px}.p1{left:24%;bottom:35px}.p2{right:23%;bottom:25px}.p3{left:8%;bottom:12px}.zoo-illustration{background:#e5e8d4}.zoo-illustration:before{content:'';position:absolute;bottom:0;left:0;width:100%;height:85px;background:#9bb68a}.fence{position:absolute;bottom:35px;left:10%;width:80%;height:80px;border:5px solid #a77d55;border-bottom:0}.fence:before{content:'';position:absolute;left:0;right:0;top:25px;border-top:4px solid #a77d55}.fence:after{content:' ';position:absolute;left:20%;right:20%;height:100%;border-left:4px solid #a77d55;border-right:4px solid #a77d55}.rabbit{position:absolute;z-index:3;bottom:40px;left:42%;width:80px;height:53px;background:#f5f0e7;border-radius:50% 50% 40% 40%}.rabbit:before,.rabbit:after{content:'';position:absolute;top:-35px;width:15px;height:43px;background:#f5f0e7;border-radius:50%;border:2px solid #d6cdbd}.rabbit:before{left:18px;transform:rotate(-12deg)}.rabbit:after{left:43px;transform:rotate(12deg)}.rabbit i{position:absolute;right:15px;top:17px;width:6px;height:6px;background:#333;border-radius:50%}.rabbit b{position:absolute;right:-8px;top:30px;width:15px;height:15px;background:#f5f0e7;border-radius:50%}.rabbit span{position:absolute;left:8px;bottom:-3px;width:15px;height:12px;background:#f5f0e7;border-radius:50%}.bird{position:absolute;z-index:3;color:#587c5b;font-size:24px}.bird1{top:70px;left:25%}.bird2{top:95px;right:24%}.grass{position:absolute;bottom:0;width:100%;height:15px;background:#71986b}.campus-card-copy{padding:23px 25px 27px}.campus-card-copy>span{font-size:8px;letter-spacing:1.5px;color:#829085}.campus-card-copy h3{font-family:'Playfair Display';font-size:25px;font-weight:500;margin:9px 0}.campus-card-copy p{font-size:11px;line-height:1.7;color:#7b887e}
+.life-section{padding-top:105px;padding-bottom:100px}.life-layout{display:grid;grid-template-columns:1fr 1fr;gap:8%;margin-top:35px}.life-copy{padding-top:5px;max-width:440px}.life-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}.life-tags span{font-size:8px;letter-spacing:1px;padding:9px 12px;border:1px solid #d7ded4;color:#6b7d70}.quote-card{margin-top:70px;background:#e5ecdf;padding:35px 45px;position:relative}.quote-mark{font-family:'Playfair Display';font-size:65px;color:#8da68e;line-height:.8}.quote-card p{font-family:'Playfair Display';font-size:clamp(22px,3vw,32px);color:#395440;max-width:700px;line-height:1.4}.quote-caption{display:block;margin-top:18px;font-size:8px;letter-spacing:1.7px;color:#829285}
+.admission-section{background:#1b3327;color:white}.admission-inner{padding-top:100px;padding-bottom:35px}.admission-grid{display:grid;grid-template-columns:1fr 1fr;gap:9%;margin-top:35px}.admission-grid h2{font-size:clamp(45px,5vw,62px)}.admission-grid h2 em{color:#b5c9a9}.admission-intro{font-size:12px;line-height:1.9;color:#bdcbbf;max-width:360px;margin-top:25px}.exam-list{border-top:1px solid #53685a}.exam-item{display:grid;grid-template-columns:35px 1fr 20px;gap:15px;align-items:center;padding:19px 0;border-bottom:1px solid #53685a}.exam-item>span{font-size:9px;color:#c6a273}.exam-item h3{font-family:'Playfair Display';font-size:22px;font-weight:500}.exam-item p{font-size:10px;color:#b6c5b9;margin-top:5px}.exam-item>b{font-weight:400;color:#d4b27e}.admission-foot{display:flex;justify-content:space-between;border-top:1px solid #53685a;margin-top:75px;padding:18px 0;font-size:8px;letter-spacing:1.4px;color:#b6c5b9}
+footer{background:#f5f4ed;padding:35px 6.5% 20px;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:20px}.footer-brand{justify-self:start}footer>p{text-align:center;font-family:'Playfair Display';font-style:italic;color:#7c897e;font-size:15px}.back-top{justify-self:end;font-size:9px;letter-spacing:1px;font-weight:700}.footer-bottom{grid-column:1/-1;border-top:1px solid #dfe4d9;margin-top:25px;padding-top:17px;display:flex;justify-content:space-between;font-size:8px;letter-spacing:1px;color:#8a968c}
+@media(max-width:800px){.site-header{padding:0 5%;height:70px}.site-header nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--cream);padding:22px 6%;flex-direction:column;gap:20px;border-bottom:1px solid #dfe4d9}.site-header nav.open{display:flex}.header-cta{display:none}.menu-toggle{display:block}.hero{grid-template-columns:1fr;padding:65px 7% 70px}.hero-art{min-height:330px;margin-top:25px}.hero-note{margin-top:35px}.hero-bottom{left:7%;right:7%}.stats-strip{padding:25px 7%;grid-template-columns:repeat(2,1fr);row-gap:25px}.stats-strip>div:nth-child(2){border:0}.section{padding:75px 7%}.about-grid,.life-layout,.admission-grid{grid-template-columns:1fr;gap:30px}.value-cards{margin-top:40px}.campus-heading{display:block}.campus-heading p{margin-top:20px}.campus-grid{grid-template-columns:1fr}.campus-inner{padding-top:75px;padding-bottom:75px}.admission-foot{margin-top:45px}footer{padding-left:7%;padding-right:7%;grid-template-columns:1fr 1fr}footer>p{display:none}.back-top{grid-column:2;grid-row:1}.footer-bottom{font-size:7px}}
+@media(max-width:480px){h1{font-size:51px}.hero-art{min-height:280px}.school-building{transform:translateX(-50%) scale(.8);transform-origin:bottom center}.tree-a{left:5%}.tree-b{right:3%}.stats-strip strong{font-size:29px}.value-cards{grid-template-columns:1fr}.quote-card{padding:28px 25px}.admission-foot{gap:20px;line-height:1.7}.footer-brand small{font-size:6px}.footer-bottom{gap:12px;line-height:1.5}}
+
+/* Real school photograph supplied by the user */
+.hero-photo{
+  min-height:420px;
+  margin:0 0 0 18px;
+  border-radius:3px;
+  background:
+    linear-gradient(180deg,rgba(12,35,25,.02) 35%,rgba(12,35,25,.72) 100%),
+    url("assets/school-building.png") center 48% / cover no-repeat;
+  box-shadow:0 18px 45px rgba(31,65,43,.13);
+  display:flex;
+  align-items:flex-end;
+  padding:25px;
+}
+.photo-caption{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.photo-caption span,.photo-caption small{display:block;font-size:8px;letter-spacing:2px}
+.photo-caption strong{display:block;font-family:'Playfair Display',serif;font-size:42px;font-weight:500;line-height:1.15}
+.photo-caption small{font-size:7px;letter-spacing:1.2px;margin-top:5px}
+@media(max-width:800px){.hero-photo{margin:20px 0 0;min-height:330px}}
+@media(max-width:480px){.hero-photo{min-height:280px;padding:18px}.photo-caption strong{font-size:34px}}
+
+/* =====================================================================
+   ANIMATIONS
+   Everything below is motion only. It is switched off automatically for
+   visitors who have "reduce motion" turned on (see the end of this file).
+   ===================================================================== */
+:root{--ease-out:cubic-bezier(.22,.8,.24,1)}
+
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes lineUp{from{transform:translateY(108%)}to{transform:none}}
+@keyframes photoIn{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes settle{from{scale:1.14}to{scale:1.02}}
+@keyframes wipe{from{opacity:1;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+@keyframes pop{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
+@keyframes ping{0%{transform:scale(1);opacity:.6}80%,100%{transform:scale(3.4);opacity:0}}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@keyframes navIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+
+/* ---------- Hero: one orchestrated entrance on page load ---------- */
+.eyebrow{animation:rise .8s var(--ease-out) .1s backwards}
+.eyebrow span{position:relative}
+.eyebrow span::after{content:'';position:absolute;inset:0;border-radius:50%;background:#c88b4d;animation:ping 2.6s ease-out 1.2s infinite}
+h1 .line{display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.12em}
+h1 .line>*{display:inline-block;animation:lineUp 1.05s var(--ease-out) backwards}
+h1 .line:nth-child(1)>*{animation-delay:.25s}
+h1 .line:nth-child(2)>*{animation-delay:.42s}
+.hero-copy{animation:rise .9s var(--ease-out) .7s backwards}
+.hero-actions{animation:rise .9s var(--ease-out) .85s backwards}
+.hero-note{animation:rise .9s var(--ease-out) 1s backwards}
+.hero-bottom{animation:fade 1s ease 1.5s backwards}
+.nudge{display:inline-block;font-style:normal;animation:nudge 1.8s ease-in-out infinite}
+
+/* Photo: unveils from the top, then slowly settles and drifts as you scroll */
+.hero-photo{background:none;isolation:isolate;animation:photoIn 1.3s var(--ease-out) .15s backwards}
+.hero-photo::before{content:'';position:absolute;inset:-70px 0;z-index:-2;background:url("assets/school-building.png") center 48% / cover no-repeat;translate:0 var(--py,0px);animation:settle 14s var(--ease-out) .15s both;will-change:translate,scale}
+.hero-photo::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,35,25,.02) 35%,rgba(12,35,25,.72) 100%)}
+.photo-caption{animation:rise .9s var(--ease-out) 1s backwards}
+
+/* ---------- Header ---------- */
+.site-header{transition:height .35s var(--ease-out),box-shadow .35s}
+.site-header.scrolled{box-shadow:0 8px 28px rgba(23,37,30,.07)}
+@media(min-width:801px){.site-header.scrolled{height:68px}}
+.scroll-progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--orange);transform:scaleX(0);transform-origin:left;pointer-events:none}
+.brand-mark{transition:transform .4s var(--ease-out)}
+.brand:hover .brand-mark{transform:rotate(-10deg) scale(1.08)}
+.site-header nav a{position:relative;align-self:flex-start;padding:6px 0;transition:color .25s}
+.site-header nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease-out)}
+.site-header nav a:hover::after,.site-header nav a.active::after{transform:scaleX(1)}
+.site-header nav a.active{color:var(--green)}
+@media(max-width:800px){.site-header nav.open{animation:navIn .35s var(--ease-out)}}
+
+/* ---------- Links and buttons ---------- */
+.header-cta,.text-link,.under-link{transition:border-color .3s,color .3s}
+.header-cta:hover,.under-link:hover{border-color:#b77739;color:#b77739}
+.text-link:hover{border-color:#b77739}
+.header-cta span,.button span,.text-link span,.under-link span{display:inline-block;transition:transform .35s var(--ease-out)}
+.header-cta:hover span,.text-link:hover span,.under-link:hover span{transform:translate(3px,-3px)}
+.button{transition:background .3s,transform .35s var(--ease-out),box-shadow .35s}
+.button:hover{background:#1c3a2d;transform:translateY(-2px);box-shadow:0 10px 22px rgba(37,77,59,.25)}
+.button:hover span{transform:translateX(5px)}
+.back-top .up{display:inline-block;transition:transform .35s var(--ease-out)}
+.back-top:hover .up{transform:translateY(-4px)}
+
+/* ---------- Scroll reveals (the .reveal class is added by script.js) ---------- */
+.reveal{opacity:0}
+.reveal.in{opacity:1;animation:rise .9s var(--ease-out) var(--d,0ms) backwards}
+.quote-card.reveal.in{animation-name:wipe;animation-duration:1.2s}
+.life-tags span.reveal.in{animation-name:pop;animation-duration:.6s}
+
+/* ---------- Cards and rows ---------- */
+.value-card{transition:transform .4s var(--ease-out),box-shadow .4s,border-color .4s}
+.value-card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(37,77,59,.1);border-color:#d3ddcf}
+.value-icon{display:inline-block;transition:transform .6s var(--ease-out)}
+.value-card:hover .value-icon{transform:rotate(90deg) scale(1.15)}
+.campus-card{transition:transform .5s var(--ease-out),box-shadow .5s}
+.campus-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(0,0,0,.28)}
+.life-tags span{transition:background .3s,color .3s,border-color .3s,transform .3s}
+.life-tags span:hover{background:var(--green);border-color:var(--green);color:#fff;transform:translateY(-2px)}
+.exam-item{transition:background .4s}
+.exam-item:hover{background:rgba(255,255,255,.045)}
+.exam-item>span,.exam-item>div{transition:transform .4s var(--ease-out)}
+.exam-item:hover>span{transform:translateX(6px)}
+.exam-item:hover>div{transform:translateX(10px)}
+.exam-item>b{display:block;transition:transform .4s var(--ease-out),color .3s}
+.exam-item:hover>b{transform:translate(5px,-5px);color:#f0cf9d}
+
+/* ---------- Campus scenes: the illustrations come alive ---------- */
+@keyframes sunPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(234,197,138,.5)}50%{transform:scale(1.07);box-shadow:0 0 0 18px rgba(234,197,138,0)}}
+@keyframes sway{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+@keyframes breathe{0%,100%{scale:1}50%{scale:1.04 .97}}
+@keyframes hop{
+  0%,52%,100%{transform:translateY(0) scale(1,1)}
+  58%{transform:translateY(0) scale(1.08,.88)}
+  68%{transform:translateY(-28px) scale(.95,1.07)}
+  78%{transform:translateY(0) scale(1.08,.88)}
+  84%{transform:translateY(-10px) scale(.98,1.03)}
+  90%{transform:translateY(0) scale(1.04,.94)}
+  95%{transform:translateY(0) scale(1,1)}
+}
+@keyframes earL{0%,56%,100%{transform:rotate(-12deg)}68%{transform:rotate(-26deg)}80%{transform:rotate(-6deg)}90%{transform:rotate(-14deg)}}
+@keyframes earR{0%,56%,100%{transform:rotate(12deg)}68%{transform:rotate(22deg)}80%{transform:rotate(4deg)}90%{transform:rotate(13deg)}}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes flyA{0%,100%{transform:translate(0,0)}25%{transform:translate(16px,-12px)}50%{transform:translate(32px,2px)}75%{transform:translate(14px,10px)}}
+@keyframes flyB{0%,100%{transform:translate(0,0)}25%{transform:translate(-14px,10px)}50%{transform:translate(-30px,-4px)}75%{transform:translate(-12px,-12px)}}
+
+.garden-sun,.zoo-sun{animation:sunPulse 4.5s ease-in-out infinite}
+.plant{transform-origin:50% 100%;animation:sway 3.6s ease-in-out infinite}
+.p2{animation-delay:-1.2s}.p3{animation-delay:-2.4s}
+.bush{transform-origin:50% 100%;animation:breathe 5s ease-in-out infinite}
+.bush2{animation-delay:-2.5s}
+
+.rabbit{transform-origin:50% 100%;animation:hop 4.8s ease-in-out infinite}
+.rabbit:before{transform-origin:50% 100%;animation:earL 4.8s ease-in-out infinite}
+.rabbit:after{transform-origin:50% 100%;animation:earR 4.8s ease-in-out infinite}
+.rabbit i{animation:blink 4s ease-in-out infinite}
+.bird1{animation:flyA 7s ease-in-out infinite}
+.bird2{animation:flyB 8s ease-in-out infinite}
+
+/* ---------- Respect visitors who prefer less motion ---------- */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1}
+}
